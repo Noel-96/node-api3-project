@@ -118,3 +118,7 @@ dist
 .DS_Store
 .vscode
 testing.db3
+
+
+# environment variables
+.env

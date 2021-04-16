@@ -14,7 +14,9 @@ router.get('/', (req, res, next) => {
 
 	users.get()
   .then((users) => {
-    res.status(200).json(users)
+    res.status(200).json({message: `Welcome ${process.env.COHORT}`,
+		fact: process.env.FUN_FACT || "I have no fun facts",
+		port: process.env.PORT, })//users)
   })
   .catch((error) => {
     next(error)

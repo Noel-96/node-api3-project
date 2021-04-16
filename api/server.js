@@ -7,7 +7,7 @@ const server = express();
 server.use(express.json())
 
 server.use(middleware.logger("short"))
-server.use(usersRouter)
+server.use("/", usersRouter)
 
 // global middlewares and the user's router need to be connected here
 
