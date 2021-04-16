@@ -1,6 +1,9 @@
 {
     "name": "node-api3-project",
     "version": "1.0.0",
+    "engines": {
+        "node": "12.18.0"
+        },
     "scripts": {
         "watch": "nodemon --require dotenv/config index.js",
         "start": "node index.js",
